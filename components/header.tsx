@@ -22,11 +22,11 @@ export function Header() {
         <div className="flex items-center justify-between h-24">
           <div className="flex items-center gap-2">
             <Image
-              src="/logo.png"
+              src="/logo.jpg"
               alt="MH Projeto Certo"
               width={200}
               height={80}
-              className="h-20 w-auto"
+              className="h-16 w-auto rounded-lg"
             />
           </div>
 

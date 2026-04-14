@@ -29,11 +29,11 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Image
-                src="/logo.png"
+                src="/logo.jpg"
                 alt="MH Projeto Certo"
                 width={140}
                 height={50}
-                className="h-12 w-auto brightness-0 invert"
+                className="h-12 w-auto rounded-lg"
               />
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
