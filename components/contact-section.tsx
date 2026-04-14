@@ -106,8 +106,8 @@ export function ContactSection() {
                   <Phone className="w-5 h-5 text-secondary" />
                 </div>
                 <div>
-                  <p className="text-sm text-primary-foreground/60">Telefone</p>
-                  <p className="font-medium">(11) 99999-9999</p>
+                  <p className="text-sm text-primary-foreground/60">WhatsApp</p>
+                  <p className="font-medium">(11) 96615-8342</p>
                 </div>
               </div>
 
@@ -117,7 +117,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-sm text-primary-foreground/60">Email</p>
-                  <p className="font-medium">contato@solartech.com.br</p>
+                  <p className="font-medium">contato@mhprojetocerto.com.br</p>
                 </div>
               </div>
 

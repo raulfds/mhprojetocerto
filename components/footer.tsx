@@ -1,5 +1,4 @@
-import Image from "next/image"
-import { Instagram, Linkedin, Phone } from "lucide-react"
+import { Instagram, Linkedin, Phone, Sun } from "lucide-react"
 
 const socialLinks = [
   {
@@ -27,14 +26,14 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Image
-                src="/logo.jpg"
-                alt="MH Projeto Certo"
-                width={140}
-                height={50}
-                className="h-12 w-auto rounded-lg"
-              />
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center shadow-lg">
+                <Sun className="w-6 h-6 text-white" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xl font-bold leading-tight">MH Projeto Certo</span>
+                <span className="text-xs text-primary-foreground/60 tracking-wider uppercase">Energia Solar</span>
+              </div>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Especialistas em energia solar fotovoltaica. 
