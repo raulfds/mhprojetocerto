@@ -19,40 +19,40 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-24">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center justify-between h-20">
+          <div className="flex items-center">
             <Image
               src="/logo.jpg"
               alt="MH Projeto Certo"
-              width={200}
-              height={80}
-              className="h-16 w-auto rounded-lg"
+              width={180}
+              height={60}
+              className="h-14 w-auto"
             />
           </div>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-10">
             <button
               onClick={() => scrollToSection("servicos")}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-base font-medium text-foreground hover:text-primary transition-colors"
             >
               Serviços
             </button>
             <button
               onClick={() => scrollToSection("sistemas")}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-base font-medium text-foreground hover:text-primary transition-colors"
             >
               Tipos de Sistemas
             </button>
             <button
               onClick={() => scrollToSection("contato")}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-base font-medium text-foreground hover:text-primary transition-colors"
             >
               Contato
             </button>
           </nav>
 
           <div className="hidden md:block">
-            <Button onClick={() => scrollToSection("contato")} className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+            <Button onClick={() => scrollToSection("contato")} size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
               Solicitar Orçamento
             </Button>
           </div>
@@ -87,7 +87,7 @@ export function Header() {
               >
                 Contato
               </button>
-              <Button onClick={() => scrollToSection("contato")} className="bg-secondary text-secondary-foreground hover:bg-secondary/90 w-full">
+              <Button onClick={() => scrollToSection("contato")} className="bg-primary text-primary-foreground hover:bg-primary/90 w-full">
                 Solicitar Orçamento
               </Button>
             </nav>

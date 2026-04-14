@@ -4,7 +4,7 @@ import { Instagram, Linkedin, Phone } from "lucide-react"
 const socialLinks = [
   {
     name: "Instagram",
-    href: "https://instagram.com/mhprojetocerto",
+    href: "https://www.instagram.com/mhprojeto.certo",
     icon: Instagram
   },
   {
@@ -14,7 +14,7 @@ const socialLinks = [
   },
   {
     name: "WhatsApp",
-    href: "https://wa.me/5511999999999",
+    href: "https://wa.me/5511966158342",
     icon: Phone
   }
 ]
