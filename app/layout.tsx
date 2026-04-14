@@ -7,7 +7,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'SolarTech - Energia Solar Fotovoltaica',
+  title: 'MH Projeto Certo - Energia Solar Fotovoltaica',
   description: 'Especialistas em projetos, instalação e manutenção de sistemas de energia solar fotovoltaica. Economize até 95% na sua conta de luz.',
   generator: 'v0.app',
   icons: {

@@ -1,14 +1,15 @@
-import { Sun, Instagram, Linkedin, Phone } from "lucide-react"
+import Image from "next/image"
+import { Instagram, Linkedin, Phone } from "lucide-react"
 
 const socialLinks = [
   {
     name: "Instagram",
-    href: "https://instagram.com/seuinstagram",
+    href: "https://instagram.com/mhprojetocerto",
     icon: Instagram
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/company/suaempresa",
+    href: "https://linkedin.com/company/mhprojetocerto",
     icon: Linkedin
   },
   {
@@ -27,10 +28,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary">
-                <Sun className="w-6 h-6 text-primary" />
-              </div>
-              <span className="text-xl font-bold">SolarTech</span>
+              <Image
+                src="/logo.png"
+                alt="MH Projeto Certo"
+                width={140}
+                height={50}
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Especialistas em energia solar fotovoltaica. 
@@ -80,7 +84,7 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/10 pt-8">
           <p className="text-center text-sm text-primary-foreground/60">
-            © {currentYear} SolarTech. Todos os direitos reservados.
+            © {currentYear} MH Projeto Certo. Todos os direitos reservados.
           </p>
         </div>
       </div>
