@@ -1,9 +1,7 @@
 import { NextResponse } from "next/server"
-import { Resend } from "resend"
 
 // Configure sua API Key do Resend nas variáveis de ambiente
 // RESEND_API_KEY=re_xxxxxxxxxxxxx
-const resend = new Resend(process.env.RESEND_API_KEY)
 
 // Configure o email do destinatário nas variáveis de ambiente
 // CONTACT_EMAIL=seu@email.com
@@ -40,6 +38,10 @@ export async function POST(request: Request) {
         message: "Mensagem recebida (modo de desenvolvimento)" 
       })
     }
+
+    // Instancia o Resend apenas se a API key estiver disponível
+    const { Resend } = await import("resend")
+    const resend = new Resend(process.env.RESEND_API_KEY)
 
     // Envia o email usando Resend
     const { error } = await resend.emails.send({
