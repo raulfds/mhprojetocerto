@@ -1,9 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Sun } from "lucide-react"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,14 +19,14 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center">
-            <Image
-              src="/logo.jpg"
-              alt="MH Projeto Certo"
-              width={180}
-              height={60}
-              className="h-14 w-auto"
-            />
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center shadow-lg">
+              <Sun className="w-6 h-6 text-white" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-primary leading-tight">MH Projeto Certo</span>
+              <span className="text-xs text-muted-foreground tracking-wider uppercase">Energia Solar</span>
+            </div>
           </div>
 
           <nav className="hidden md:flex items-center gap-10">
